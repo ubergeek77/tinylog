@@ -22,6 +22,14 @@ func NewLogger(cfg Config) *Logger {
 	return &logger
 }
 
+// NewTaggedLogger
+// Conveniently create a new logger with a given tag
+func NewTaggedLogger(logTag string, logColor string) *Logger {
+	cfg := NewConfig()
+	cfg.LogPrefix = GenerateTag(logTag, logColor, cfg)
+	return NewLogger(cfg)
+}
+
 // NewColor
 // Generate an ANSI color sequence from an escape code
 // All supported ANSI sequences are supported here, even 256 bit colors

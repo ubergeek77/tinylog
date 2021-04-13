@@ -445,6 +445,20 @@ func main() {
 }
 ```
 
+*Note: This example benefitted from creating `Config` objects to modify later, but if you simply want a new tagged logger without any configuration, such as to define as a `var` in the global scope, you may use the `NewTaggedLogger` function:*
+
+```go
+package main
+
+import tlog "github.com/ubergeek77/tinylog"
+
+var log = tlog.NewTaggedLogger("Logger A", tlog.NewColor("38;5;111"))
+
+func main() {
+	log.Info("Wow! I didn't even need to make a config!")
+}
+```
+
 ![Nested logging](samples/nested_logging.PNG)
 
 ---
