@@ -4,7 +4,7 @@ tinylog
 #### A lightweight and customizable Golang logger
 
 ## Features
-- Tiny (just 244 functional* lines of code!)
+- Tiny (just 248 functional* lines of code!)
 - No third-party imports
 - Easily customizable
 - Beginner friendly
