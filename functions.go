@@ -78,7 +78,7 @@ func NewConfig() Config {
 	cfg.ErrorFile = ""
 
 	cfg.PrintTime = true
-	cfg.TimePattern = "[Jan 01 2006 @ 15:04:05.000] "
+	cfg.TimePattern = "[Jan 02 2006 @ 15:04:05.000] "
 	cfg.TimeColor = ColorGray
 
 	cfg.PrintLevel = true
